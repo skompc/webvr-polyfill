@@ -3012,16 +3012,16 @@ VRDisplay.prototype.requestPresent = function (layers) {
         reject(new Error('Unable to present.'));
       };
       self.addFullscreenListeners_(fullscreenElement, onFullscreenChange, onFullscreenError);
-      if (requestFullscreen(fullscreenElement)) {
-        self.enableWakeLock();
-        self.waitingForPresent_ = true;
-      } else if (isIOS() || isWebViewAndroid()) {
+     // if (requestFullscreen(fullscreenElement)) {
+      //  self.enableWakeLock();
+      //  self.waitingForPresent_ = true;
+     // } else if (isIOS() || isWebViewAndroid()) {
         self.enableWakeLock();
         self.isPresenting = true;
         self.beginPresent_();
         self.fireVRDisplayPresentChange_();
         resolve();
-      }
+     // }
     }
     if (!self.waitingForPresent_ && !isIOS()) {
       exitFullscreen();
