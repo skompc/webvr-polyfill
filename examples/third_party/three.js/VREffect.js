@@ -173,7 +173,7 @@ THREE.VREffect = function ( renderer, onError ) {
 
 	this.requestPresent = function () {
 
-		return this.setFullScreen( true );
+		return this.setFullScreen( false );
 
 	};
 
