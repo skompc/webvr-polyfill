@@ -3141,8 +3141,8 @@ var config = {
   DPDB_URL: 'https://dpdb.webvr.rocks/dpdb.json',
   K_FILTER: 0.98,
   PREDICTION_TIME_S: 0.040,
-  CARDBOARD_UI_DISABLED: false,
-  ROTATE_INSTRUCTIONS_DISABLED: false,
+  CARDBOARD_UI_DISABLED: true,
+  ROTATE_INSTRUCTIONS_DISABLED: true,
   YAW_ONLY: false,
   BUFFER_SCALE: 0.5,
   DIRTY_SUBMIT_FRAME_BINDINGS: false
